@@ -2,6 +2,8 @@
 
 ![A DIY, token-light alternative to AI-orchestration products, in Claude Code](assets/cover-v2.png)
 
+> 日本語: Sakana Fugu のような「複数 AI を1つの API で束ねる」製品は、Claude Code を使っているなら買わなくていい。肝は、別モデルに"実装"させることではなく"自分の計画をレビュー"させること。その設計とコピペ用の雛形一式を公開。
+
 Everyone is talking about model-orchestration products (Sakana Fugu and friends): one API that routes your task across Claude, GPT, Gemini, etc.
 
 If you already use **Claude Code** (plus any second-model CLI, e.g. Codex or Gemini), you do not need to buy one. Claude Code is the host that runs everything; the second model is a swappable part you call as a reviewer. You can get the useful 80% yourself: cheaper, in your control, with a handful of files. This repo is the exact blueprint plus copy-paste templates.
