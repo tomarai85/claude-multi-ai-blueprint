@@ -37,6 +37,17 @@ Modes:   LEAN (default) = review only, token-light
 
 Today the frontier coding models are close enough that "the other model implements better" is rarely true. So the leverage is **review**, not execution.
 
+```mermaid
+flowchart TD
+  T[Your task / plan] --> R{Substantial plan?<br/>by blast radius}
+  R -->|no| C[Claude implements]
+  R -->|yes| V[Second model reviews the PLAN only<br/>token-light]
+  V --> P{Verdict}
+  P -->|PASS| C
+  P -->|REVISE| F[Claude revises the plan] --> V
+  P -->|ESCALATE| H[Human decides]
+```
+
 ## The one pattern that matters: Codex reviews your plan
 
 1. **Fire by blast radius, not vibes.** Only run a review when the plan touches: contracts / routing / persistence / auth / infra / agent behavior / external sends / or roughly >150 LOC or >3 files. Skip local, reversible, trivial changes.
