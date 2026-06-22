@@ -1,8 +1,8 @@
-# Lean Multi-AI in Claude Code — a DIY alternative to orchestration products
+# How to Run Multiple AIs in Claude Code Without Buying an Orchestrator
 
 Everyone is talking about model-orchestration products (Sakana Fugu and friends): one API that routes your task across Claude, GPT, Gemini, etc.
 
-If you already use Claude Code, you do not need to buy one. You can get the useful 80% yourself — cheaper, fully in your control, with a handful of files. This repo is the exact blueprint plus copy-paste templates.
+If you already use **Claude Code** (plus any second-model CLI, e.g. Codex or Gemini), you do not need to buy one. Claude Code is the host that runs everything; the second model is a swappable part you call as a reviewer. You can get the useful 80% yourself: cheaper, in your control, with a handful of files. This repo is the exact blueprint plus copy-paste templates.
 
 ## TL;DR
 
