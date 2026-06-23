@@ -6,7 +6,7 @@
 
 Everyone is talking about model-orchestration products (Sakana Fugu and friends): one API that routes your task across Claude, GPT, Gemini, etc.
 
-If you already use **Claude Code** (plus any second-model CLI, e.g. Codex or Gemini), you do not need to buy one. Claude Code is the host that runs everything; the second model is a swappable part you call as a reviewer. You can get the useful 80% yourself: cheaper, in your control, with a handful of files. This repo is the exact blueprint plus copy-paste templates.
+If you already use **Claude Code** (plus any second-model CLI, e.g. Codex or Gemini), you do not need to buy one. Claude Code is the host that runs everything; the second model is a swappable part you call as a reviewer. You can get most of the value yourself: cheaper, in your control, with a handful of files. This repo is the exact blueprint plus copy-paste templates.
 
 ## TL;DR
 
@@ -32,7 +32,7 @@ The genuinely useful idea inside these products is "let a second model check the
 ```
 Layer 1  ROUTING        which model handles a task?      (Opus / Sonnet / Codex)
 Layer 2  SECOND-MODEL   what do you use the 2nd model for?
-                         ├── REVIEW  = 2nd opinion on YOUR plan   <- the high-value 80%
+                         ├── REVIEW  = 2nd opinion on YOUR plan   <- the high-value part
                          └── EXECUTE = 2nd model writes code       (rarely worth it now)
 
 Modes:   LEAN (default) = review only, token-light
